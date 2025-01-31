@@ -16,7 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from authentication import views
+
+#from . import views
+# finance_tracker_web/urls.py
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    # Add the home route for '/'
+    path('', views.home, name='home'),  
+    # Add the home route for '/'
+    #path('', views.home, name='home1'), 
+    # authentication/urls.py
+    path('auth/', include('authentication.urls')),  # Inclure les URLs de l'app authentication
+
+
 ]
