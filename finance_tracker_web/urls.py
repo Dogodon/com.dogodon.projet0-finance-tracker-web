@@ -31,6 +31,7 @@ urlpatterns = [
     #path('', views.home, name='home1'), 
     # authentication/urls.py
     path('auth/', include('authentication.urls')),  # Inclure les URLs de l'app authentication
+    path('education/', include('education.urls')),  # Cours d'éducation financière
 
 
 ]

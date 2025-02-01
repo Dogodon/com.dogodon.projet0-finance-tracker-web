@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # Ajouter l'application authentication
     'authentication',
+    # Application education
+    'education',
 ]
 
 MIDDLEWARE = [
